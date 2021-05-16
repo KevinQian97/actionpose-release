@@ -2,6 +2,7 @@
 This is the release repo of our course project for 16824 2021 Spring
 
 Authors: Yijun Qian, Shengcao Cao
+
 Email: yijunqia@andrew.cmu.edu, shengcao@andrew.cmu.edu
 
 ## Pretrained Models:
