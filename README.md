@@ -16,7 +16,8 @@ You can find the error samples under ./error_samples folder
 
 ## Traning Script
 ```
-python main.py --dataset NTU --modality PoseAction \
+#select modality from [RGB,Joints,PoseAction]
+python main.py --dataset NTU --modality PoseAction \ 
     --arch R2plus1D --is_3D --num_segments 32 \
     --gd 20 --lr 0.001 --lr_steps 4 6 8 10 --epochs 12 \
     --batch-size 20 -j 20 --dropout 0.5 --eval-freq=1 \
@@ -26,7 +27,8 @@ python main.py --dataset NTU --modality PoseAction \
 ```
 ## Testing Script
 ```
-python main.py --dataset NTU --modality RGB \
+#select modality from [RGB,Joints,PoseAction]
+python main.py --dataset NTU --modality RGB \ 
     --arch R2plus1D --is_3D --num_segments 32 \
     --gd 20 --lr 0.001 --lr_steps 4 6 8 10 --epochs 12 \
     --batch-size 20 -j 20 --dropout 0.5 --eval-freq=1 \
